@@ -3,4 +3,4 @@ monthly_expenses = 4000
 
 monthly_savings = monthly_income - monthly_expenses
 
-projected_Savings = monthly_savings * 12 + {monthly_savings * 12 * 0.05}
+projected_savings = monthly_savings * 12 + {monthly_savings * 12 * 0.05}
