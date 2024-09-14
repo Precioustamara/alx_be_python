@@ -4,3 +4,6 @@ monthly_expenses = [4000]
 monthly_savings = monthly_income - monthly_expenses
 
 projected_savings = monthly_savings * 12 + {monthly_savings * 12 * 0.05}
+
+print(f"monthly_savings")
+print(f"projected_savings")
