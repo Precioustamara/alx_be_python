@@ -3,13 +3,6 @@ num2 = int(input("Enter the second number: "))
 operation = input ("Choose the operation(+, -, *, /): ")
 result = 0
 
-##match operation:
-   #case '+':
-    #result = num1 + num2
-    #print("The result is ")
-   #case '-':
-    #result = num1 - num2
-
 match operation:
     case '+':
         result = num1 + num2
