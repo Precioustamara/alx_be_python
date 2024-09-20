@@ -1,26 +1,44 @@
 num1 = int(input("Enter the first number: "))
 num2 = int(input("Enter the second number: "))
-operations = input("Choose the operation (+, -, *, /): ")
+operation = input("Choose the operation (+, -, *, /): ")
 result = 0
 
-match operations:
-    case '+':
+#case _ if operation == "+":
+       # result = num1 + num2
+        #print(f"The result is {result}.")
+    # case _ if operation == "-":
+    #     result = num1 - num2
+    #     print(f"The result is {result}.")
+    # case _ if operation == "*":
+    #     result = num1 * num2
+    #     print(f"The result is {result}.")
+    # case _ if operation == "/":
+    #     if num2 == 0:
+    #         print("Cannot divide by zero.")
+#         else:
+#             result = num1 / num2
+#             print(f"The result is {result}.")
+#     case _:
+#         print("Choose the operation (+, -, *, /).")
+
+match operation:
+    case _ if operation == '+':
         result = num1 + num2
         print(f"The result is {result}")
-    case '-':
+    case _ if operation == '-':
         result = num1 - num2
         print(f"The result is {result}")
-    case '*':
+    case _ if operation == '*':
         result = num1 * num2
         print(f"The result is {result}")
-    case '/':
+    case _ if operation == '/':
         if num2 == 0:
             print(f"Cannot divide by zero.")
         else:
             result = num1 / num2
             print(f"The result is {result}")
     case _:
-        print(f"This operation is invalid")
+        print(f"Choose the operation (+, -, *, /): ")
         
 
 
