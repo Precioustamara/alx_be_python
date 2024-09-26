@@ -14,20 +14,34 @@ def main():
         if choice == 1:
             # Prompt for and add an item
             item = input('Enter the item to add: ')
-            shopping_list.append(item)
+            item_name = item.lower()
+            if item_name in shopping_list:
+                print (f"{item} already exist")
+                add = input("Would you like to keep it? (Y/N) ").lower()
+                if add == 'y':
+                  shopping_list.append(item_name)
+            else:
+             exit
+            shopping_list.append(item_name)
         elif choice == 2:
             # Prompt for and remove an item
            item = input('Enter the item to remove: ')
-           shopping_list.remove(item)
+           if item not in shopping_list:
+            print("item does not exist")
+           else:
+            shopping_list.remove(item)
+           print(f"{item} has been removed")
         elif choice == 3:
-            # Display the shopping list
-               print(shopping_list)
-        elif choice == 4:
-            exit
-            print("Goodbye!")
-            break
+           if not shopping_list:
+                    print("The list is empty")
+           else:
+                    print("\nShopping list")
+                    for index, item in enumerate(shopping_list, start=1):
+                        print(f"{index}. {item.capitalize()}")
+                        print("Goodbye!")
+                        break
         else:
-            print("Invalid choice. Please try again.")
+                print("Invalid choice. Please try again.") 
 
 if __name__ == "__main__":
     main()
