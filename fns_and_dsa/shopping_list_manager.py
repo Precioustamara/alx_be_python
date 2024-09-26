@@ -9,6 +9,7 @@ def main():
     shopping_list = []
     while True:
         display_menu()
+    try:
         choice = int(input("Enter your choice: "))
 
         if choice == 1:
@@ -41,7 +42,9 @@ def main():
                         print("Goodbye!")
                         break
         else:
-                print("Invalid choice. Please try again.") 
-
+            print("Invalid choice. Please try again.") 
+    except ValueError:
+        print("chioce is not a number")
+        
 if __name__ == "__main__":
     main()
