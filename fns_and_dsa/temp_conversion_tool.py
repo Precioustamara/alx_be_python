@@ -19,7 +19,7 @@ def convert_to_fahrenheit(celsius):
     :return: Temperature in Fahrenheit
     """
     global CELSIUS_TO_FAHRENHEIT_FACTOR
-    return (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + FAHRENHEIT_OFFSET
+    return (celsius + FAHRENHEIT_OFFSET) * CELSIUS_TO_FAHRENHEIT_FACTOR
 
 def main():
     try:
@@ -35,10 +35,10 @@ def main():
 
         if unit == 'C':
             converted_temp = convert_to_fahrenheit(temp)
-            print(f"{temp}°C is {converted_temp:.2f}°F.")
+            print(f"{temp}°C is {converted_temp: }°F.")
         elif unit == 'F':
             converted_temp = convert_to_celsius(temp)
-            print(f"{temp}°F is {converted_temp:.2f}°C.")
+            print(f"{temp}°F is {converted_temp: }°C.")
         else:
             print("Invalid input. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
     except ValueError as e:
