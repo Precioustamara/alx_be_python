@@ -56,18 +56,18 @@ def list_available_books(self):
             return "Available books: " + ", ".join(available_books)
         return "No books are currently available."
 
-library = Library()
+# library = Library()
 
-book1 = Book("1984", "George Orwell")
-book2 = Book("To Kill a Mockingbird", "Harper Lee")
-book3 = Book("The Great Gatsby", "F. Scott Fitzgerald")
+# book1 = Book("1984", "George Orwell")
+# book2 = Book("To Kill a Mockingbird", "Harper Lee")
+# book3 = Book("The Great Gatsby", "F. Scott Fitzgerald")
 
-library.add_book(book1)
-library.add_book(book2)
-library.add_book(book3)
+# library.add_book(book1)
+# library.add_book(book2)
+# library.add_book(book3)
 
-#print(library.list_available_books(book1, book2, book3)) # Lists all books
-print(library.check_out_book("1984"))  # Checks out "1984"
-#print(library.list_available_books())  # Lists available books after checkout
-print(library.return_book("1984"))     # Returns "1984"
+# #print(library.list_available_books(book1, book2, book3)) # Lists all books
+# print(library.check_out_book("1984"))  # Checks out "1984"
+# #print(library.list_available_books())  # Lists available books after checkout
+# print(library.return_book("1984"))     # Returns "1984"
 #print(library.list_available_books()) 
