@@ -12,4 +12,7 @@ def perform_operation(num1, num2, operation):
           return num1 / num2
     else:
        return 'invalid'
+    
+if __name__ == "__main__":
+   perform_operation(5, 10, 'add')
         
